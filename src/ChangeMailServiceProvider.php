@@ -20,13 +20,13 @@ class ChangeMailServiceProvider extends ServiceProvider
         parent::boot();
 
         if ($this->app->runningInConsole()) {
-            $this->publishes([__DIR__ . '/config/config.php' => config_path('config.php')]);
+            $this->publishes([__DIR__ . '/config/config.php' => config_path('changemail.php')]);
         }
     }
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/config/config.php','changeMail');
         $this->app->register(EventServiceProvider::class);
+        $this->mergeConfigFrom(__DIR__.'/config/config.php','changemail');
     }
 }
