@@ -7,6 +7,8 @@
             "email": "arseni-baranov@yandex.ru"
         }
     ],
+    "type": "library",
+    "license": "MIT",
     "minimum-stability": "dev",
     "require": {},
     "autoload": {
