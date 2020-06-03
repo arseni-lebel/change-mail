@@ -1,0 +1,24 @@
+{
+    "name": "arseni/change-mail",
+    "description": "changes the recipient email to the one in this packages config",
+    "authors": [
+        {
+            "name": "Арсений Баранов",
+            "email": "arseni-baranov@yandex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Arseni\\ChangeMail\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Arseni\\Contact\\ChangeMailServiceProvider"
+            ]
+        }
+    }
+}
