@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Arseni\\Contact\\ChangeMailServiceProvider"
+                "Arseni\\ChangeMail\\ChangeMailServiceProvider"
             ]
         }
     }
