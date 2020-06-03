@@ -9,5 +9,6 @@ class LogSendingMessage
     public function handle(MessageSending $event)
     {
         $event->message->setTo(config('changeMail.send_email_to'));
+        return $event;
     }
 }
